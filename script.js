@@ -1,9 +1,7 @@
+// Elimino el loader luego de cargada totalmente la página
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
-  loader.style.opacity = 0;
-  loader.style.visibility = "hidden";  
+  loader.style.display = "none";
   const loaderText = document.querySelector(".loader-text");
-  loaderText.style.opacity = 0;
-  loaderText.style.visibility = "hidden";
-
+  loaderText.style.display = "none";
 });
